@@ -31,3 +31,25 @@ for i in [0,1,2,3,4,5]:
 	print valid_password(pwd)
 	
 	
+	
+# -*- coding: UTF-8 -*-
+#2
+#返回 100 内的素数列表
+#考察基本的循环和选择概念、列表的使用
+
+def prime_numbers():
+	
+	
+	result = [1,2]
+	for i in range(3,101):
+		flag = 0
+		for j in range(2,i/2):
+			if i % j == 0:
+				flag = 1
+		if flag == 0:
+			result.append(i)
+			
+
+	return result
+
+print prime_numbers()
